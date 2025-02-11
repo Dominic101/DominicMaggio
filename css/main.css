@@ -57,14 +57,14 @@ td {
 
 .bio {
   padding-right: 2.5%;
-  width: 63%;
-  vertical-align: center;
+  width: 70%;
+  vertical-align: top;
 }
 
 .photo {
-  padding-left: 2.5%;
   width: 30%;
-  max-width: 30%;
+  text-align: center;
+  vertical-align: top;
 }
 
 .self-author {
