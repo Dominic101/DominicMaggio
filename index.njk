@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dominic Maggio</title>
+   <link rel="icon" href="https://github.mit.edu/drmaggio/dominic_maggio_website/blob/main/img/dominic.PNG?raw=true">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dominic Maggio is a PhD student in robotics at MIT">
+    <link rel="stylesheet" href="{{ 'css/main.css' | url }}">
+    <script>
+      var blue = "#3498db";
+      var darkblue = "#2980b9";
+      function underlineSpan(x) {
+        x.style.textDecoration = 'underline';
+        x.style.color = $darkblue
+      }
+
+      function normalSpan(x) {
+        x.style.textDecoration = 'none';
+        x.style.color = $blue
+      }
+
+      {% raw %}
+      var bibtex_piginet = `
+  @INPROCEEDINGS{yang2023piginet, 
+    AUTHOR    = {Zhutian  Yang AND Caelan R Garrett AND Lozano-P{\\'e}rez, Tom{\\'a}s AND Leslie Kaelbling AND Dieter Fox}, 
+    TITLE     = {{Sequence-Based Plan Feasibility Prediction for Efficient Task and Motion Planning}}, 
+    BOOKTITLE = {Proceedings of Robotics: Science and Systems}, 
+    YEAR      = {2023}, 
+    ADDRESS   = {Daegu, Republic of Korea}, 
+    MONTH     = {July}, 
+    DOI       = {10.15607/RSS.2023.XIX.061} 
+  } 
+      `;
+
+      var bibtex_clio = `
+      @article{Maggio24ral-clio,
+        author = {D. Maggio and Y. Chang and N. Hughes and M. Trang and D. Griffith and C. Dougherty and E. Cristofalo and L. Schmid and L. Carlone},
+        title = {Clio: Real-time Task-Driven Open-Set {3D} Scene Graphs},
+        journal = ral,
+        volume = {9},
+        number = {10},
+        pages = {8921--8928},
+        note = {\linkToPdf{https://arxiv.org/pdf/2404.13696},\linkToVideo{https://youtu.be/m-HJO10qhSQ},\linkToWeb{https://news.mit.edu/2024/helping-robots-focus-on-objects-that-matter-0930}},
+        pdf = {https://arxiv.org/pdf/2404.13696},
+        Year = {2024}
+      }
+      `;
+      {% endraw %}
+      
+      // copy predefinedString once clicked
+      function copyPiginetToClipboard() {    
+          copyToClipboard(bibtex_piginet)
+      }
+      
+      function copyClioToClipboard() {  
+          copyToClipboard(bibtex_clio)
+      }
+
+      function copyedNotice() { 
+        // Show the notice and hide it after 2 seconds
+        const notice = document.getElementById("copynotice");
+        notice.classList.remove("hidden");
+        notice.style.opacity = "1";
+        setTimeout(() => {
+            notice.style.opacity = "0";
+            setTimeout(() => {
+                notice.classList.add("hidden");
+            }, 300);  // Wait for opacity transition to complete before hiding
+        }, 2000);
+      }
+
+      // copy predefinedString once clicked
+      function copyToClipboard(predefinedString) {    
+          // Create a temporary textarea to utilize the execCommand('copy') method
+          const tempTextArea = document.createElement("textarea");
+          document.body.appendChild(tempTextArea);
+          tempTextArea.value = predefinedString;
+          tempTextArea.select();
+          document.execCommand("copy");
+          document.body.removeChild(tempTextArea);
+
+          // alert("Text copied to clipboard: " + predefinedString);
+          copyedNotice();
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td class="bio">
+            <h1 class="name center">{{name}}</h1>
+            <div class="email center">{{email}}</div>
+            <div class="logos center">
+              <a href="{{twitter}}" target="_blank">
+                <img class="logo" src="https://github.com/zt-yang/zhutian-yang-website/blob/main/img/twitter-icon.png?raw=true">
+              </a>
+              <a href="{{linkedin}}" target="_blank">
+                <img class="logo" src="https://github.com/zt-yang/zhutian-yang-website/blob/main/img/linkedin-icon.png?raw=true">
+              </a>
+              <a href="{{github}}" target="_blank">
+                <img class="logo" src="https://github.com/zt-yang/zhutian-yang-website/blob/main/img/github-icon.png?raw=true">
+              </a>
+            </div>
+            <p>Hello! My name is Dominic Maggio and I'm a PhD candidate at MIT working on spatial scene understanding for robotics focusing on Open-Set Semantic Mapping, Monocular Localization and Scene Representations. I'm advised by Luca Carlone in the <a href="https://web.mit.edu/sparklab/">SPARK Lab</a>. 
+            I obtained double major bachelor degrees in Aerospace Engineering and in Electrical Engineering and Computer Science at MIT in 2021 with  a 5.0/5.0 GPA 
+            and a Masters in Aerospace Engineering from MIT in 2023.</p>
+          </td>
+          <td class="photo">
+            <img src="https://raw.githubusercontent.com/zt-yang/zhutian-yang-website/main/img/zhutianyang.jpg?token=GHSAT0AAAAAABZLZPSEQFWPM4YB67NHZED4Y3CZFKQ" width="100%">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <h2>Research</h2>
+    I'm working on the following problems at the intersection of robotics and computer vision:
+    <ul>
+      <li> Form Open-Set 3D Semantic maps at the correct granulatity (i.e., what is an object) to support an agents tasks. </li>
+      <li> Combining semantic information across multiple views to get an overall semantic understanding of the scene. </li>
+      <li> Monocular camera pose estimation with lightweight memory and computation usage. </li>
+      <li> Creating new efficient spatial and memory models of the 3D scene for both localization and semantic understanding. </li>
+    </ul>
+
+    <h2>Awards and News</h2>
+    <ul>
+      <li> Draper Fellowship - Funded Masters Program in collaboration with Draper Labs 2021-2023 </li>
+      <li> NSF GRFP Fellowship - Funded PhD Program 2023-2026 </li>
+      <li> Clio featured on the front page of MIT News. </li>
+      <li> Work on terrain relative navigation features in Aerospace America </li>
+      <li> Work on terrain relative navigation features in Interesting Engineering </li>
+      <li> Featured personally in multi-page article in Catholic High School Bear Facts. </li>
+    </ul>
+
+    <!--div class="video-container">
+      <iframe frameborder="0"
+        src="https://www.youtube.com/embed/0WjD5FeXQB0">
+      </iframe>
+      <p class="caption"> Music Video: Robots learning to plan motion faster for household tasks. It's for a project I finished in 2022 at NVIDIA Seattle Robotics Lab, <a href="https://piginet.github.io/">https://piginet.github.io/</a> </p>
+    </div-->
+
+    <!-- <img class="figure" src="https://github.com/zt-yang/zhutian-yang-website/blob/main/img/piginet_tasks.gif?raw=true">
+    <p class="caption"> Figure: Robots learning to plan motion faster for rearrangement tasks </p> -->
+
+    <h2>Publications</h2>
+    <div id="copynotice" class="hidden">Bibtex copied to clipboard!</div>
+
+    <ul class="publications">
+      {% for pub in publications %}
+      <div class="row">
+        <div class="columnimg">
+          <img class="figure" src="{{ pub.visual }}">
+        </div>
+        <div class="columntext">
+
+            <li class="pub">
+              <p>
+                <span class="pub-title">{{ pub.title }}</span></p>
+              <p>{{ pub.authors | safe }}</p>
+              <p><i>{{ pub.conference }}</i></p>
+              <p>{{ pub.extra | safe }}</p>
+            </li>
+
+        </div>
+      </div>
+
+    {% endfor %}
+    </ul>
+
+    <h2>Thesis</h2>
+    <div id="copynotice" class="hidden">Bibtex copied to clipboard!</div>
+
+      <ul class="thesis">
+      {% for pub in thesis %}
+      <div class="row">
+        <div class="columnimg">
+          <img class="figure" src="{{ pub.visual }}">
+        </div>
+        <div class="columntext">
+
+            <li class="pub">
+              <p>
+                <span class="pub-title">{{ pub.title }}</span></p>
+              <p>{{ pub.authors | safe }}</p>
+              <p><i>{{ pub.conference }}</i></p>
+              <p>{{ pub.extra | safe }}</p>
+            </li>
+
+        </div>
+      </div>
+
+    {% endfor %}
+    </ul>
+
+    <h2>Work</h2>
+    <ul>
+      <li> <b>Apple</b> Technology Investigation Intern. Summer 2023 </li>
+      <li> <b>Aptiv</b> Perception and Sensor Fusion Intern. Summer 2021 </li>
+      <li> <b>Lockheed Martin/Sikorsky</b> Autonomy Division R&D Intern. Summer 2020 </li>
+      <li> <b>Millennium Space Systems</b> Thermal Engineering Intern and Project Manager. Winter 2020 </li>
+      <li> <b>Draper Laboratory</b> Perception and Autonomy Division Intern. Summer 2019 </li>
+      <li> <b>MIT Aerospace Controls Lab</b> Undergraduate Researcher 2019-2020 </li>
+      <li> <b>MIT Space Systems Lab Lab</b> Undergraduate Researcher, Head of thermal sub-team. 2018-2019 </li>
+    </ul>
+
+    <h2>Services</h2>
+
+    <ul>
+      <li>Reviewed for ICRA, IROS, RA-L, CVPR, IJRR, T-RO
+      </li>
+      <li>Co-Instructed MIT 16.633 Junior Seminar: Autonomous Machines. Designed course material and gave lectures on an introduction seminar to 
+      computer vision and autonomous drones for undergraduates in Fall 2022 and Fall 2023 </a>.</li>
+      <li>Served as Teaching Assistant to MIT 16.485  Visual Navigation for Autonomous Vehicles in Fall 2023.</li>
+      <li>Graduate Resident Assistant (GRA) for New Vassar (MIT Dormitory).</li>
+      <li>Undergraduate Research Opportunities Program (UROP) Advisor. Advise undergraduates on research projects. </li>
+    </ul>
+
+  </body>
+</html>
