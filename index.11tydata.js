@@ -22,6 +22,9 @@ const shi = "Jingnan Shi";
 const abate = "Marcus Abate";
 const streetman = "Brett Streetman";
 const steiner = "Ted Steiner";
+const navid = "Navid Dadkhah Tehrani"
+const igor = "Igor Cherepinsky"
+const sean = "Sean Carlson"
 
 // authorList generates the HTML for the author list from a JS array
 function authorList(authors) {
@@ -101,9 +104,10 @@ module.exports = {
   name: "Dominic Maggio",
   email: "drmaggio {at} mit {dot} edu",
   linkedin: "https://www.linkedin.com/in/dominic-maggio-050034158/",
+  scholar: "https://scholar.google.com/citations?user=41B3STwAAAAJ&hl=en",
   publications: [
     {
-      title: "Bayesian Fields: Task-driven open-set semantic gaussian splatting",
+      title: "Bayesian Fields: Task-driven Open-Set Semantic Gaussian Splatting",
       authors: authorList([ maggio, carlone]),
       conference: "arxiv 2025 availible soon",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/bayesian.png?raw=true",
@@ -131,7 +135,7 @@ module.exports = {
       })
     },
     {
-      title: "VERF: Runtime monitoring of pose estimation with neural radiance fields",
+      title: "VERF: Runtime Monitoring of Pose Estimation with Neural Radiance Fields",
       authors: authorList([ maggio, mario, carlone]),
       conference: "RAL 2023",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/verf.png?raw=true",
@@ -142,7 +146,7 @@ module.exports = {
       })
     },
     {
-      title: "Loc-NeRF: Monte carlo localization using neural radiance fields.",
+      title: "Loc-NeRF: Monte Carlo Localization using Neural Radiance Fields",
       authors: authorList([ maggio, abate, shi, mario, carlone]),
       conference: "ICRA 2023",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/locnerf.png?raw=true",
@@ -154,7 +158,7 @@ module.exports = {
       })
     },
     {
-      title: "Vision-based terrain relative navigation on high altitude balloon and sub-orbital rocket.",
+      title: "Vision-based Terrain Relative Navigation on High Altitude Balloon and Sub-orbital Rocket",
       authors: authorList([ maggio, mario, streetman, steiner, carlone]),
       conference: "SciTech 2023",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/rocket.png?raw=true",
@@ -169,6 +173,16 @@ module.exports = {
         shoutout: "&#128293; Featured in Articles in Aerospace America, Interesting Engineering and Draper News",
       })
     },
+    {
+      title: "Stochastic Optimization for Motion Planning of Helicopter and Underwater Vehicles Reposition Task",
+      authors: authorList([maggio, navid, igor, sean]),
+      conference: "IEEE Aerospace 2021",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/stomprp.png?raw=true",
+      extra: extraInfo({
+        paper: "https://ieeexplore.ieee.org/abstract/document/9438507",
+        // bibtex: "copyDiffusionCCSPToClipboard",
+      })
+    },
   ],
   thesis:
   [
@@ -176,7 +190,7 @@ module.exports = {
       title: "Visual Terrain Relative Navigation: Pose Estimation, Neural Fields, and Verification",
       authors: authorList([maggio]),
       conference: "MIT Master's Thesis",
-      visual: "https://github.com/zt-yang/zhutian-yang-website/blob/main/img/corl23packing.gif?raw=true",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/thesis.png?raw=true",
       extra: extraInfo({
         paper: "https://dspace.mit.edu/handle/1721.1/151568",
         // bibtex: "copyDiffusionCCSPToClipboard",
