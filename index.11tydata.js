@@ -106,7 +106,7 @@ module.exports = {
       title: "Bayesian Fields: Task-driven open-set semantic gaussian splatting",
       authors: authorList([ maggio, carlone]),
       conference: "arxiv 2025 availible soon",
-      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/bayesian.jpg?raw=true",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/bayesian.png?raw=true",
       // extra: extraInfo({
       //   paper: "https://arxiv.org/abs/2404.13696",
       //   code: "https://github.com/MIT-SPARK/Clio",
@@ -134,7 +134,7 @@ module.exports = {
       title: "VERF: Runtime monitoring of pose estimation with neural radiance fields",
       authors: authorList([ maggio, mario, carlone]),
       conference: "RAL 2023",
-      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/verf.jpg?raw=true",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/verf.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2308.05939",
         // talk: "https://www.youtube.com/watch?v=m-HJO10qhSQ",
@@ -145,7 +145,7 @@ module.exports = {
       title: "Loc-NeRF: Monte carlo localization using neural radiance fields.",
       authors: authorList([ maggio, abate, shi, mario, carlone]),
       conference: "ICRA 2023",
-      vvisual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/locnerf.jpg?raw=true",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/locnerf.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2209.09050",
         code: "https://github.com/MIT-SPARK/Loc-NeRF",
@@ -157,7 +157,7 @@ module.exports = {
       title: "Vision-based terrain relative navigation on high altitude balloon and sub-orbital rocket.",
       authors: authorList([ maggio, mario, streetman, steiner, carlone]),
       conference: "SciTech 2023",
-      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/rocket.jpg?raw=true",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/rocket.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2302.08011",
         // bibtex: "copyDiffusionCCSPToClipboard",
