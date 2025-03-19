@@ -109,12 +109,12 @@ module.exports = {
     {
       title: "Bayesian Fields: Task-driven Open-Set Semantic Gaussian Splatting",
       authors: authorList([ maggio, carlone]),
-      conference: "arxiv 2025",
+      conference: "arxiv 2025, code and video coming soon",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/bayesian.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2503.05949",
-        code: "Coming Soon",
-        talk: "Coming Soon",
+        // code: "Coming Soon",
+        // talk: "Coming Soon",
       //   bibtex: "copyDiffusionCCSPToClipboard",
       })
     },
