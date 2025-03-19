@@ -109,14 +109,14 @@ module.exports = {
     {
       title: "Bayesian Fields: Task-driven Open-Set Semantic Gaussian Splatting",
       authors: authorList([ maggio, carlone]),
-      conference: "arxiv 2025 availible soon",
+      conference: "arxiv 2025",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/bayesian.png?raw=true",
-      // extra: extraInfo({
-      //   paper: "https://arxiv.org/abs/2404.13696",
-      //   code: "https://github.com/MIT-SPARK/Clio",
-      //   talk: "https://www.youtube.com/watch?v=m-HJO10qhSQ",
+      extra: extraInfo({
+        paper: "https://arxiv.org/abs/2503.05949",
+        code: "Coming Soon",
+        talk: "Coming Soon",
       //   bibtex: "copyDiffusionCCSPToClipboard",
-      // })
+      })
     },
     {
       title: "Clio: Real-time Task-Driven Open-Set 3D Scene Graphs",
