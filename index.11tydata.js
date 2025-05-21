@@ -10,6 +10,7 @@
 // These are my frequent collaborators, so let's use some variables:
 const maggio = "Dominic Maggio";
 const carlone = "Luca Carlone";
+const lim = "Hyungtae Lim";
 const mario = "Courtney Mario";
 const chang = "Yun Chang";
 const hughes = "Nathan Hughes";
@@ -106,6 +107,18 @@ module.exports = {
   linkedin: "https://www.linkedin.com/in/dominic-maggio-050034158/",
   scholar: "https://scholar.google.com/citations?user=41B3STwAAAAJ&hl=en",
   publications: [
+    {
+      title: "VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold",
+      authors: authorList([ maggio, lim, carlone]),
+      conference: "arxiv 2025, code and video coming soon",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/vggt-slam.png?raw=true",
+      extra: extraInfo({
+        paper: "https://arxiv.org/abs/2505.12549",
+        // code: "Coming Soon",
+        // talk: "Coming Soon",
+      //   bibtex: "copyDiffusionCCSPToClipboard",
+      })
+    },
     {
       title: "Bayesian Fields: Task-driven Open-Set Semantic Gaussian Splatting",
       authors: authorList([ maggio, carlone]),
