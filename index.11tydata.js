@@ -117,7 +117,6 @@ module.exports = {
         code: "https://github.com/MIT-SPARK/VGGT-SLAM",
         talk: "https://www.youtube.com/watch?v=GBdOvd6p4OU",
       //   bibtex: "copyDiffusionCCSPToClipboard",
-      shoutout: "&#128293; Featured in MIT News",
       })
     },
     {
