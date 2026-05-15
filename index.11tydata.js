@@ -111,11 +111,11 @@ module.exports = {
       title: "VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction",
       authors: authorList([ maggio, carlone]),
       conference: "RSS 2026",
-      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/vggt-slam.png2?raw=true",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/vggt-slam2.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2601.19887",
         code: "https://github.com/MIT-SPARK/VGGT-SLAM",
-        // talk: "Coming Soon",
+        talk: "https://www.youtube.com/watch?v=GBdOvd6p4OU",
       //   bibtex: "copyDiffusionCCSPToClipboard",
       media: {
         "MIT News": "https://news.mit.edu/2025/teaching-robots-to-map-large-environments-1105",
