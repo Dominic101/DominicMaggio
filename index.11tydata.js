@@ -117,9 +117,6 @@ module.exports = {
         code: "https://github.com/MIT-SPARK/VGGT-SLAM",
         talk: "https://www.youtube.com/watch?v=GBdOvd6p4OU",
       //   bibtex: "copyDiffusionCCSPToClipboard",
-      media: {
-        "MIT News": "https://news.mit.edu/2025/teaching-robots-to-map-large-environments-1105",
-      },
       shoutout: "&#128293; Featured in MIT News",
       })
     },
@@ -154,7 +151,7 @@ module.exports = {
     {
       title: "Clio: Real-time Task-Driven Open-Set 3D Scene Graphs",
       authors: authorList([ maggio, chang, hughes, l1, l2, l3, l4, schmid, carlone]),
-      conference: "RAL 2024",
+      conference: "RA-L 2024",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/clio.jpg?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2404.13696",
@@ -170,7 +167,7 @@ module.exports = {
     {
       title: "VERF: Runtime Monitoring of Pose Estimation with Neural Radiance Fields",
       authors: authorList([ maggio, mario, carlone]),
-      conference: "RAL 2023",
+      conference: "RA-L 2023",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/verf.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2308.05939",
