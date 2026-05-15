@@ -108,15 +108,35 @@ module.exports = {
   scholar: "https://scholar.google.com/citations?user=41B3STwAAAAJ&hl=en",
   publications: [
     {
+      title: "VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction",
+      authors: authorList([ maggio, carlone]),
+      conference: "RSS 2026",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/vggt-slam.png2?raw=true",
+      extra: extraInfo({
+        paper: "https://arxiv.org/abs/2601.19887",
+        code: "https://github.com/MIT-SPARK/VGGT-SLAM",
+        // talk: "Coming Soon",
+      //   bibtex: "copyDiffusionCCSPToClipboard",
+      media: {
+        "MIT News": "https://news.mit.edu/2025/teaching-robots-to-map-large-environments-1105",
+      },
+      shoutout: "&#128293; Featured in MIT News",
+      })
+    },
+    {
       title: "VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold",
       authors: authorList([ maggio, lim, carlone]),
-      conference: "arxiv 2025, code and video coming soon",
+      conference: "NeurIPS 2025",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/vggt-slam.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2505.12549",
-        // code: "Coming Soon",
+        code: "https://github.com/MIT-SPARK/VGGT-SLAM",
         // talk: "Coming Soon",
       //   bibtex: "copyDiffusionCCSPToClipboard",
+      media: {
+        "MIT News": "https://news.mit.edu/2025/teaching-robots-to-map-large-environments-1105",
+      },
+      shoutout: "&#128293; Featured in MIT News",
       })
     },
     {
