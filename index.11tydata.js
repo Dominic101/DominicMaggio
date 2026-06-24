@@ -10,6 +10,7 @@
 // These are my frequent collaborators, so let's use some variables:
 const maggio = "Dominic Maggio";
 const carlone = "Luca Carlone";
+const gorlo = "Nicolas Gorlo";
 const lim = "Hyungtae Lim";
 const mario = "Courtney Mario";
 const chang = "Yun Chang";
@@ -107,6 +108,17 @@ module.exports = {
   linkedin: "https://www.linkedin.com/in/dominic-maggio-050034158/",
   scholar: "https://scholar.google.com/citations?user=41B3STwAAAAJ&hl=en",
   publications: [
+    {
+      title: "FOUND-IT: Foundation-model-first Task-driven 3D Scene Graphs with Granularity on Demand",
+      authors: authorList([ maggio, gorlo, carlone]),
+      conference: "arxiv pre-print 2026",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/found-it.jpg?raw=true",
+      extra: extraInfo({
+        paper: "https://arxiv.org/abs/2605.25371",
+        talk: "https://www.youtube.com/watch?v=gaPeSTlYQKE",
+      //   bibtex: "copyDiffusionCCSPToClipboard",
+      })
+    },
     {
       title: "VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction",
       authors: authorList([ maggio, carlone]),
