@@ -11,6 +11,9 @@
 const maggio = "Dominic Maggio";
 const carlone = "Luca Carlone";
 const gorlo = "Nicolas Gorlo";
+const hauser = "Kris Hauser"
+const lorenzo = "Lorenzo Shaikewitz"
+const aryan = "Aryan Naveen"
 const lim = "Hyungtae Lim";
 const mario = "Courtney Mario";
 const chang = "Yun Chang";
@@ -109,9 +112,22 @@ module.exports = {
   scholar: "https://scholar.google.com/citations?user=41B3STwAAAAJ&hl=en",
   publications: [
     {
+      title: "Foundation-Model-Driven 3D Scene Graphs for Mobile Manipulation",
+      authors: authorList([ maggio, lorenzo, aryan, hauser, carlone]),
+      conference: "arxiv 2026",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/found-itpp.jpg?raw=true",
+      extra: extraInfo({
+        paper: "https://arxiv.org/abs/2610.23622",
+        talk: "https://www.youtube.com/watch?v=CtvftxgeKzg",
+      //   bibtex: "copyDiffusionCCSPToClipboard",
+      shoutout: "&#128293; Featured as a live demo at MIT's Future Fest",
+      })
+    },
+
+    {
       title: "FOUND-IT: Foundation-model-first Task-driven 3D Scene Graphs with Granularity on Demand",
-      authors: authorList([ maggio, gorlo, carlone]),
-      conference: "arxiv pre-print 2026",
+      authors: authorList([ maggio, gorlo, hauser, carlone]),
+      conference: "RA-L 2026",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/found-it.jpg?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2605.25371",
@@ -150,12 +166,12 @@ module.exports = {
     {
       title: "Bayesian Fields: Task-driven Open-Set Semantic Gaussian Splatting",
       authors: authorList([ maggio, carlone]),
-      conference: "arxiv 2025, code and video coming soon",
+      conference: "arxiv pre-print 2025, code coming soon",
       visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/bayesian.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2503.05949",
         // code: "Coming Soon",
-        // talk: "Coming Soon",
+        talk: "https://www.youtube.com/watch?v=DLBHpUP_-dk",
       //   bibtex: "copyDiffusionCCSPToClipboard",
       })
     },
