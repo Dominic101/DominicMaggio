@@ -115,7 +115,7 @@ module.exports = {
       title: "Foundation-Model-Driven 3D Scene Graphs for Mobile Manipulation",
       authors: authorList([ maggio, lorenzo, aryan, hauser, carlone]),
       conference: "arxiv 2026",
-      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/found-itpp.jpg?raw=true",
+      visual: "https://github.com/Dominic101/dominic-maggio-website/blob/main/img/found-itpp.png?raw=true",
       extra: extraInfo({
         paper: "https://arxiv.org/abs/2610.23622",
         talk: "https://www.youtube.com/watch?v=CtvftxgeKzg",
